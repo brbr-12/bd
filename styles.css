@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ff85a2; 
+    font-family: 'Arial', sans-serif;
+}
+
+.birthday-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 90%;
+}
+
+h1 {
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #f50057;
+    transform: translateY(-3px);
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.show {
+    display: block;
+    animation: fadeIn 1s forwards;
+}
+
+.special-text {
+    font-weight: bold;
+    color: #ff4081;
+    font-size: 1.4rem;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
